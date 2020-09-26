@@ -25,3 +25,12 @@ You can make usage of OpenWeatherMaps API (https://openweathermap.org) to fetch 
 
 ## Submission
 Fork this project and share it with your interviwer
+
+## How to run it
+ You will need Docker, Java 8 and Maven installed on your computer.
+
+After clone it you:
+Run the start.sh
+
+Eureka link: http://localhost:9091 
+Test through Swagger: http://localhost:9093/swagger-ui.html
