@@ -1,0 +1,13 @@
+# Alpine because it's lighter
+FROM openjdk:8-jdk-alpine
+
+# Set ENV variables
+ENV PORT=9091
+ENV CONFIG_URL="http://config:9090"
+
+# Add JAR file and run it as entrypoint
+ADD target/gobots-eureka-server.jar app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
+
+# Expose the port
+EXPOSE 9091

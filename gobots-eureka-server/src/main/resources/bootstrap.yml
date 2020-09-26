@@ -1,0 +1,9 @@
+server:
+  port: ${PORT:9091}
+  
+spring:
+  application:
+    name: gobots-eureka-server
+  cloud:
+    config:
+      uri: ${CONFIG_URL:http://localhost:9090}

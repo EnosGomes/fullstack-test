@@ -1,0 +1,9 @@
+server:
+  port: ${PORT:9092}
+
+spring:
+  application:
+    name: gobots-zuul-server
+  cloud:
+    config:
+      uri: ${CONFIG_URL:http://localhost:9090}

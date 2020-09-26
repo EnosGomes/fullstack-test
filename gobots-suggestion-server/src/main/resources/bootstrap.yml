@@ -1,0 +1,9 @@
+server:
+  port: ${PORT:9093}
+
+spring:
+  application:
+    name: gobots-suggestion-server
+  cloud:
+    config:
+      uri: ${CONFIG_URL:http://localhost:9090}
